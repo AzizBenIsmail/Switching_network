@@ -1,0 +1,5 @@
+1) Vlan Administration (21)/Vlan guichet (22)/Vlan caisse (23)/Vlan servise_technique (24)
+2)Configure terminal/vlan 21/name Administration/end
+3)show vlan brief
+4)static access car par defaut le type selectione est static mode
+5)0 aucun

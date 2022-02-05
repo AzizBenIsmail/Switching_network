@@ -1,0 +1,22 @@
+Partie A
+C) S2-Switch1(config-if)#switchport trunk allowed vlan 21,22,23,24,80
+
+D) S2-Switch1#show interface fa0/3 switchport
+
+F) 
+
+S2-Switch1(config)#interface fa0/1
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#exit
+***************************************
+S2-Switch1(config)#interface fa0/2
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#exit
+***************************************
+S2-Switch1(config)#interface fa0/3
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#end
+

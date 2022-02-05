@@ -1,0 +1,17 @@
+2)
+S2-Switch5(config)#vlan 99
+S2-Switch5(config-vlan)#name Gestion
+S2-Switch5(config-vlan)#end
+S2-Switch5(config)#interface vlan 99 
+S2-Switch5(config-if)#ip address 192.168.99.14 255.255.255.0
+
+3)  S2-PC1 ne peut pas envoyer une requête ping à S2-Laptop1 car il ne sont pas sur le meme vlan
+chaque périphérique
+appartient à un vlan différent de l’autre et le switch ne connaît pas les adresses IP
+des différents vlan
+
+4) S2-PC5 peut envoyer une requête ping à S2-Printer car ils font partie du même vlan
+(vlan 22).
+
+5) S2-Laptop1 ne peut pas envoyer une requête ping à S2-PC6 puisque les switches ne
+reconnaissent pas l'adresse IP des vlans demandés

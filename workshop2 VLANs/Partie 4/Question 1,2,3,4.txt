@@ -1,0 +1,8 @@
+Partie 4
+----------------------------------------------------------
+1) no vlan (id)
+
+2) Show vlan brief
+
+3) l'interface 0/8 a ete supprime donc il faut Avant de supprimer un VLAN, 
+réaffectez tous les ports membres à un autre VLAN.

@@ -1,0 +1,46 @@
+-A- Partie A
+
+C) S2-Switch1(config-if)#switchport trunk allowed vlan 21,22,23,24,80
+
+D) S2-Switch1#show interface fa0/3 switchport
+
+F) 
+
+S2-Switch1(config)#interface fa0/1
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#exit
+***************************************
+S2-Switch1(config)#interface fa0/2
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#exit
+***************************************
+S2-Switch1(config)#interface fa0/3
+S2-Switch1(config-if)#switchport mode trunk
+S2-Switch1(config-if)#switchport trunk native vlan 80
+S2-Switch1(config-if)#end
+
+-B- Partie B
+
+A) S2-Switch2(config)#interface fa0/1
+S2-Switch2(config-if)#switchport mode dynamic auto
+S2-Switch2(config-if)#exit
+
+B)S2-Switch2#show interface fa0/2 switchport
+
+D)
+
+S2-Switch2(config)#interface fa0/2
+S2-Switch2(config-if)#switchport mode trunk
+
+S2-Switch2(config-if)#switchport trunk native vlan 80
+S2-Switch2(config-if)#exit
+***************************************
+S2-Switch2(config)#interface fa0/3
+S2-Switch2(config-if)#switchport mode trunk
+S2-Switch2(config-if)#switchport trunk native vlan 80
+S2-Switch2(config-if)#end
+
+e) Car lors de la configuration manuelle d’une interface en mode trunk , on
+peut définir nous mêmes les VLANs autorisés à passer dans le trafic

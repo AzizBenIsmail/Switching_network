@@ -1,0 +1,21 @@
+--switch-3
+S2-PC1 : 192.168.21.1		|Fa0/2	|  Vlan 21
+S2-PC2 : 192.168.22.1		|Fa0/3	|  Vlan 22
+S2-LAPTOP1 : 192.168.23.1	|Fa0/4	|  Vlan 23
+--switch-4
+S2-LAPTOP2 : 192.168.21.2	|Fa0/4	|  Vlan 21
+S2-PC3 : 192.168.24.1		|Fa0/2	|  Vlan 24
+--switch-5
+s2-PC4 : 192.168.21.3		|Fa0/6	|  Vlan 21
+--switch-6
+S2-PC5 : 192.168.22.2		|Fa0/8	|  Vlan 22
+S2-PC6 : 192.168.23.2		|Fa0/10	|  Vlan 23
+
+2)S2-Switch3(config)#interface fa0/2
+S2-Switch3(config-if)#switchport mode access
+S2-Switch3(config-if)#switchport access vlan 21
+S2-Switch3(config-if)#exit
+
+3)show interface fa0/2 switchport ou show vlan brief
+
+4) Non car on n'a pas modifier sont etat
