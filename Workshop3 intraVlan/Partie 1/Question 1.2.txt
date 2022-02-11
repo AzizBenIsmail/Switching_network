@@ -1,0 +1,20 @@
+1)
+
+S2_PC1 : 21 , 192.168.21.1
+
+S2_PC2 : 22 , 192.168.22.1
+
+S2_PC4 : 21 , 192.168.21.3
+
+S2_Laptop2 : 21 ,192.168.21.2
+
+S2_PC5 : 22 ,192.168.22.2
+
+2)
+
+le ping a about car il sont dans le meme vlan (21) et 
+									appartien a un meme Reseau	
+4) 0x0015
+	TCI:0x0015 : 0000 0000 0001 0101 => 16+4+1 = 21
+		VID = 21
+	b)-> Elle correspond au VLAN 21

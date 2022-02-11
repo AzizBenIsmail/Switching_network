@@ -1,0 +1,25 @@
+1-A) Connectivité entre S2-PC1 et S2-PC2 n'est pas possible 
+
+1-B) l'erreur au niverau du routeur car les 2 pc sont du vlans differents
+et de different reseau et  on na pas confugure routeur 
+
+de plus L'adresse source appartient au VLAN 21 par contre l’adresse destinataire
+appartient au VLAN 22.
+
+2) Le problème se manifeste au niveau de S2-PC1 
+	
+On ne peut pas assurer un routage Inter-vlan par un Switch niveau 2
+entre S2-PC1 et S2-PC5 car ils appartiennent à 2 vlan différents
+
+S2-PC => VLAN 21
+S2-PC5=> VLAN 22
+
+5)
+
+S2-Switch2(config)#interface f0/4
+S2-Switch2(config-if)#switchport access vlan 21
+S2-Switch2(config-if)#exit
+*************************************************
+S2-Switch2(config)#interface f0/5
+S2-Switch2(config-if)#switchport access vlan 22
+S2-Switch2(config-if)#exit
