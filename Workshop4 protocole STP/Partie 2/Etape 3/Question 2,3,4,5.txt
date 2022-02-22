@@ -1,0 +1,10 @@
+2. Quelle est la priorité de pont primaire pour le VLAN 31 ?
+Réponse
+24607
+3. Quelle est la priorité de pont secondaire pour le VLAN 31 ?
+Réponse
+24608
+4. Interprétez ces résultats.
+Réponse
+24607<24608 la valeur de la priorité de pont primaire est inférieure à celle de pont
+secondaire

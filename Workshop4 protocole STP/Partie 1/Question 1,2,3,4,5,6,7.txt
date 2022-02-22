@@ -1,0 +1,38 @@
+1/ 
+S3_Switch1#show spanning-tree
+
+2/ 
+S3-Switch1
+
+3/ 
+* Le mode spanning-tree sélectionne le commutateur Switch1 en tant que
+pont racine car ce commutateur a le plus petit adresse MAC
+
+4/
+Les ports racines de :
+- Switch 2 : fa0/1
+- Switch 3 : fa0/9
+- Switch 4 : fa0/2
+- Switch 5 : fa0/9
+
+5/
+Le mode spanning-tree sélectionné ces ports comme ports racines sur le
+commutateur S3-Switch 4 car pour atteindre le switch root et le switch 4 possède
+plusieurs chemins dont leurs coût sont égaux , pour cela on choisit le port qui à le
+plus petit priorité Fa0/2
+-> le coût de ce chemin est 19*2=38
+
+6/
+S3-Switch1 : fa0/1 - fa0/9
+S3-Switch2 : fa0/2 - fa0/9
+S3-Switch3 : fa0/8 - fa0/5 - fa0/6 - fa0/7
+S3-Switch4 : fa0/6 - fa0/5
+S3-Switch5 : fa0/1 - fa0/4 - fa0/2 - fa0/3
+
+7/
+S3-Switch4 : fa0/3 - fa0/4 - fa0/7 - fa0/8
+S3-Switch5 : fa0/5 - fa0/6
+
+8/
+La mode spanning-tree sélectionne ces ports en tant que des ports alternatifs
+(bloqués) car ils fournissent un chemin de secours vers le port racine.

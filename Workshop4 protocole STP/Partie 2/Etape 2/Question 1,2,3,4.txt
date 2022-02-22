@@ -1,0 +1,38 @@
+1/ 
+Il y a 3 instances STP sur chaque commutateur
+
+2/
+VLAN Nom Commutateur Priorité
+
+31 S3-Switch1 32769 + 31 = 32799
+
+32 S3-Switch1 32769 + 32 = 32800
+
+31 S3-Switch2 32769 + 31 = 32799
+
+32 S3-Switch2 32769 + 32 = 32800
+
+31 S3-Switch3 32769 + 31 = 32799
+
+32 S3-Switch3 32769 + 32 = 32800
+
+31 S3-Switch4 32769 + 31 = 32799
+
+32 S3-Switch4 32769 + 32 = 32800
+
+31 S3-Switch5 32769 + 31 = 32799
+
+32 S3-Switch5 32769 + 32 = 32800
+
+3/
+
+ Adresse MAC de S3-Switch5 : 0001.96DE.2B7B :
+
+VLAN 1 : pont racine est S3-Switch5
+VLAN 31 : pont racine est S3-Switch5
+VLAN 32 : pont racine est S3-Switch5
+
+4/
+Dans notre cas , les priorités sont égaux pour les VLAN 1 , VLAN 31 et VLAN 32 . Donc ,
+Le switch pour les vlans VLAN 1 , VLAN 31 et VLAN 32 ayant l’adresse MAC la plus
+basse (0001.96DE.2B7B en comparant de gaude à droite )remporte l’élection

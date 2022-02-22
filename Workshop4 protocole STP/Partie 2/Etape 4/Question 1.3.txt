@@ -1,0 +1,5 @@
+1/ 
+Des ports qui ne seront jamais connectés à un autre équipement actif. Cette fonction est
+activée uniquement sur les terminaux qui sont les PC dans notre cas
+
+2/ On doit activer cette fonction sur les ports de commutateur activés par PortFast
