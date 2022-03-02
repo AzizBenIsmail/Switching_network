@@ -1,0 +1,11 @@
+1/ Switch2 est le pont racine au niveau du site central
+
+2/ SU-switch1 : Inexistant |  Root
+   SU-switch2 : Inexistant | Designated
+   SU_switch3 : Root       | Inexistant
+   SU_switch4 : Designated | Inexistant
+
+
+3/
+SU-Switch 3 : Root car c’est le channel avec le coût moins élevée et les seul
+chemin pour accéder au Switch2 (pont racine)

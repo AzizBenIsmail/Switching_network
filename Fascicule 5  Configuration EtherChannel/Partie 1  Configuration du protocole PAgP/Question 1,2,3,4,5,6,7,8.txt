@@ -1,0 +1,42 @@
+1/ SC-Switch3#show interfaces status
+
+2/Les ports qu’on va utiliser pour la création de l’agrégation entre les commutateurs
+sont :
+○ Gig0/1
+○ Fa0/1
+○ Fa0/2
+Car ces trois ports sont en mode duplex , ont la même bande passante et la même
+
+mode .
+
+3/
+SC-Switch3#configure terminale
+SC-Switch3(config)#int range fa0/1-2, gig0/1
+SC-Switch3(config-if-range)#channel-group 1 mode auto
+*********************************************************
+SC-Switch4#configure terminale
+SC-Switch4(config)#int range fa0/1-2, gig0/1
+SC-Switch4(config-if-range)#channel-group 1 mode desirable
+SC-Switch4(config-if-range)#channel-protocol pagp
+
+4/Enter configuration commands, one per line.  End with CNTL/Z.
+SC-Switch3(config)#int range fa0/1-2,gig0/1
+SC-Switch3(config-if-range)#no shutdown
+SC-Switch3(config-if-range)#end
+
+5/ SC-Switch3#show etherchannel summary
+
+6/
+SU : S => c’est à dire c’est un switch niveau 2 (Layer2) et pour U => Le port
+channel est en cours d’utilisation(in use)
+P : c’est à dire que les ports sont inclus dans le etherchannel
+
+7/SC-Switch3#conf t
+SC-Switch3(config)#interface port-channel 1
+SC-Switch3(config-if)#switchport mode trunk
+
+8/SC-Switch3(config)#interface port-channel 1
+SC-Switch3(config-if)#switchport trunk native vlan 99
+***********************************************
+SC-Switch4(config)#interface port-channel 1
+SC-Switch3(config-if)#switchport trunk native vlan 99
