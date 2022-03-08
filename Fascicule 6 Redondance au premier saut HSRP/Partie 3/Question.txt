@@ -1,0 +1,13 @@
+d/SC-Router1	Active
+SC-Router2	Active
+
+e/Non, la connectivité n’est pas
+ maintenue entre la zone A et le routeur backbone-R2 . 
+parce que l’interface f0/5 de ZA-Switch4, qui devient non fonctionnel, 
+est nécessaire pour atteindre le routeur ZA-Router2 et par la suite 
+l’interface s0/0/0 de backbone-R2.
+
+f)La connectivite n’est pas maintenu entre le site central et serveur DHCP
+Puisque la passerlle par defaut est configure sur l’address 192.168.40.253
+
+

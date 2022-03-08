@@ -1,0 +1,28 @@
+1)SC-FTP Server	192.168.40.253	SC-Router2
+SC-DNS Server	192.168.40.253	SC-Router2
+SC-Mail Server	192.168.40.253	SC-Router2
+SC-Web Server	192.168.40.253	SC-Router2
+
+b)SC-FTPServer=>SC-Switch1=>SC-Switch2=>SC
+-Router2=>Backbone_R5=> Backbone_R3=> Backbone_R1=>DHCP-Server
+c)
+SC-DNS Server	
+
+SC-DNSServer=>SC-Switch3=>SC-Switch4=>SC-Switch2=>SC-Router2=>
+Backbone_R5=> Backbone_R3=> Backbone_R1=>DHCP-Server
+
+SC-Mail Server
+
+SC-DNSServer=>SC-Switch2=>SC-Router2=>Backbone_R5=> 
+Backbone_R3=> Backbone_R1=>DHCP-Server
+
+SC-Web Server	
+
+SC-DNSServer=>SC-Switch4=> SC-Switch2=>SC-Router2=>Backbone_R5=> 
+Backbone_R3=> Backbone_R1=>DHCP-Server
+
+3)
+b/ Le traffic ping s’arrête et donne request 
+timeout parce que l’interface f0/5 , qui devient non 
+fonctionnel, est nécessaire pour atteindre 
+le routeur SC-Router2 et par la suite l’interface s0/0/0 de backbone-R2

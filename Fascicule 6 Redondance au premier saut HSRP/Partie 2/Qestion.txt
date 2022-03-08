@@ -1,0 +1,15 @@
+3)
+a/0000.0C9F.F001
+
+b/L’adresse IP de routeur Router1 est 10.150.40.254
+La priorité du routeur Router1 est : 100
+
+4)Show standby brief
+
+5) -Router1 Active
+   -Router2 Standby
+
+6)Le protocole HSRP a choisi ZA-Router1
+ comme un routeur actif parce que l’adresse IP de 
+l’interface g0/1 : 10.150.40.254 de ZA-Router 1 est plus supérieur 
+que l’adresse IP de l’interface g0/0 : 10.150.40.254 de ZA-Router 2

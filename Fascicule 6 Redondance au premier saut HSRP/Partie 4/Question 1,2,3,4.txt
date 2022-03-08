@@ -1,0 +1,19 @@
+1/
+
+SC-Router1(config)#int g0/0 
+SC-Router1(config-if)#standby 1 priority 150
+SC-Router1(config-if)#Standby 1 preempt
+
+2/ 
+
+SC-Router1#show standby brief
+
+3/
+
+Le routeur SC-Router 1 , sa priorité est 150 et le groupe 
+c’est le groupe 1 . L’adress virtuelle est 192.168.40.40 et 
+l’interface c’est g0/0
+
+4/
+
+   SC-Router1(config-if)#standby 1 preempt
